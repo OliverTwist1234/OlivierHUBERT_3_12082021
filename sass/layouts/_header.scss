@@ -1,0 +1,10 @@
+.siteheader{
+    grid-area: "header";
+    width: 100%;
+    height: 6.3rem;
+    @include flex-center;
+    background-color: $colourbg-primary;
+    &__image{
+        height: 3rem;
+    }
+}
