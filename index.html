@@ -26,11 +26,11 @@
     <link rel="stylesheet" href="./public/css/style.css" />
   </head>
   <body>
-
-    <!--/////////////////////////////////LOADER////////////////////////////////////////-->
+    <!--/////////////////////////////////////////////////LOADER////////////////////////////////////////-->
 
     <div class="loader">
-      <svg class="loader__svg"
+      <svg
+        class="loader__svg"
         xmlns="http://www.w3.org/2000/svg"
         height="218"
         width="218"
@@ -106,7 +106,7 @@
       </ul>
     </div>
 
-    <!--/////////////////////////////////HEADER////////////////////////////////////////-->
+    <!--////////////////////////////////////////////HEADER/////////////////////////////////////////////////-->
 
     <header class="siteheader">
       <figure class="siteheader__logo">
@@ -117,5 +117,30 @@
         />
       </figure>
     </header>
+
+    <!--//////////////////////////////////////CONTENU PRINCIPAL////////////////////////////////////////////-->
+
+    <main>
+      <!--**************************************SECTION LOCALISATION***********************************-->
+
+      <div class="location">
+        <form class="location__town" method="post" action="#">
+          <a
+            href="#"
+            class="location__town--lien"
+            title="Lien possible vers une carte"
+          >
+            <i class="location__town--icon fas fa-map-marker-alt"></i>
+          </a>
+
+          <input
+            class="location__town--saisie"
+            type="text"
+            placeholder="Ex : Ville, Quartier"
+          />
+        </form>
+      </div>
+
+    </main>
   </body>
 </html>
