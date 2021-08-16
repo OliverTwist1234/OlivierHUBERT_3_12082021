@@ -3,3 +3,27 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin keyframes($name){
+    @keyframes #{$name}{
+        @content;
+    }
+}
+
+@mixin animation($animation, $duration, $timing, $delay, $iteration, $direction, $fill-mode){
+    animation-name: $animation;
+    animation-duration: $duration;
+    animation-timing-function: $timing; 
+    animation-delay: $delay;
+    animation-iteration-count: $iteration;
+    animation-direction: $direction;
+    animation-fill-mode: $fill-mode;
+}
+
+@mixin myTransition($property, $duration, $timing, $delay){
+    transition-property: $property;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
+    transition-delay: $delay;
+}
+
