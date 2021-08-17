@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass ./sass/style.scss:./public/css/style.css -w --style compressed",
+    "sass": "sass ./sass/style.scss:./public/css/style.css -w --style expanded",
     "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
