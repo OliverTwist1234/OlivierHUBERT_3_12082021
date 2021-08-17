@@ -1,0 +1,26 @@
+/****************************************Section Localisation*********************************/
+
+.location {
+  width: 100%;
+  height: 5rem;
+  background-color: $colourbg-location;
+  box-shadow: inset 0rem 0.5rem 0.7rem rgba(0, 0, 0, 0.2);
+  grid-area: location;
+  @include flex-center;
+  &__town {
+    &--lien {
+      font-size: 1.8rem;
+      color: $colourtxt-location;
+    }
+    &--saisie {
+      height: 2.5rem;
+      width: 14rem;
+      margin-left: 1.5rem;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.7rem;
+      font-weight: 400;
+      border: none;
+      background-color: transparent;
+    }
+  }
+}

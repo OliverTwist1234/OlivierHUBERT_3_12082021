@@ -19,7 +19,11 @@ li{
 }
 
 a{
-    cursor: pointer;
+    display: inline-block;
     text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
 }
 

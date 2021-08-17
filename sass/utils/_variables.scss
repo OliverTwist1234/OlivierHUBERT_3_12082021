@@ -10,7 +10,7 @@ $colourbg-primary: #fff;
 $colourbg-location: #eaeaea;
 $colourtxt-location: #353535;
 $colourbg-secondary: #f6f6f6;
-$colourbg-footer:#353535;
+$colourbg-footer:#353535; 
 $colourbg-loader: rgba(255, 255, 255, 0.9);
 $colourtxt-new: #008766;
 
@@ -20,8 +20,9 @@ $colourtxt-new: #008766;
 $colour-icon-operation: #7e7e7e;
 $colour-btn-exploration: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
 
-//*******************variables animation loader********************//
+//*******************variables animation loader*********************//
 
 $offset: 300;
 $dashArray: 440; 
 $dashOffset: $dashArray * 2;
+

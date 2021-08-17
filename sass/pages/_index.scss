@@ -1,8 +1,17 @@
-.container{
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
+/***************************************GRID Container***************************************/
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6.3rem 5rem;
+  grid-template-areas:
+    "siteheader"
+    "location";
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 6.3rem;
-    grid-template-areas: "siteheader";
+    grid-template-areas: "siteheader location";
+  }
 }

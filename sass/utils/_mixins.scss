@@ -1,29 +1,46 @@
-@mixin flex-center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
 }
 
-@mixin keyframes($name){
-    @keyframes #{$name}{
-        @content;
-    }
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
 }
 
-@mixin animation($animation, $duration, $timing, $delay, $iteration, $direction, $fill-mode){
-    animation-name: $animation;
-    animation-duration: $duration;
-    animation-timing-function: $timing; 
-    animation-delay: $delay;
-    animation-iteration-count: $iteration;
-    animation-direction: $direction;
-    animation-fill-mode: $fill-mode;
+@mixin animation(
+  $animation,
+  $duration,
+  $timing,
+  $delay,
+  $iteration,
+  $direction,
+  $fill-mode
+) {
+  -webkit-animation-name: $animation;
+          animation-name: $animation;
+  -webkit-animation-duration: $duration;
+          animation-duration: $duration;
+  -webkit-animation-timing-function: $timing;
+          animation-timing-function: $timing;
+  -webkit-animation-delay: $delay;
+          animation-delay: $delay;
+  -webkit-animation-iteration-count: $iteration;
+          animation-iteration-count: $iteration;
+  -webkit-animation-direction: $direction;
+          animation-direction: $direction;
+  -webkit-animation-fill-mode: $fill-mode;
+          animation-fill-mode: $fill-mode;
 }
 
-@mixin myTransition($property, $duration, $timing, $delay){
-    transition-property: $property;
-    transition-duration: $duration;
-    transition-timing-function: $timing;
-    transition-delay: $delay;
+@mixin myTransition($property, $duration, $timing, $delay) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $timing;
+  transition-delay: $delay;
 }
-

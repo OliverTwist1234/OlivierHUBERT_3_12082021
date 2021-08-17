@@ -5,8 +5,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -19,26 +18,22 @@ li {
 }
 
 a {
-  cursor: pointer;
+  display: inline-block;
   text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 /***************************************HEADER****************************************/
 .siteheader {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: siteheader;
   width: 100%;
   height: 6.3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background-color: #fff;
 }
 
@@ -54,282 +49,88 @@ a {
   z-index: 100;
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-animation-name: draw3;
-          animation-name: draw3;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-name: draw3;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
   -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
   -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
   -webkit-animation-direction: normal;
-          animation-direction: normal;
+  animation-direction: normal;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .loader__svg {
   position: relative;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .loader__liste {
   position: absolute;
   top: 70%;
   left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
   font-size: 3rem;
-  color: #9356DC;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  color: #99E2D0;
   display: flex;
-}
-
-.loader__liste--element:nth-child(1) {
-  -webkit-animation-name: flash;
-          animation-name: flash;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.loader__liste--element:nth-child(2) {
-  -webkit-animation-name: flash;
-          animation-name: flash;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-.loader__liste--element:nth-child(3) {
-  -webkit-animation-name: flash;
-          animation-name: flash;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.loader__liste--element:nth-child(4) {
-  -webkit-animation-name: flash;
-          animation-name: flash;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-}
-
-.loader__liste--element:nth-child(5) {
-  -webkit-animation-name: flash;
-          animation-name: flash;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.loader__liste--element:nth-child(6) {
-  -webkit-animation-name: flash;
-          animation-name: flash;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-}
-
-.loader__liste--element:nth-child(7) {
-  -webkit-animation-name: flash;
-          animation-name: flash;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
-  -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
-}
-
-.loader__liste--element:nth-child(8) {
-  -webkit-animation-name: flash;
-          animation-name: flash;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
-  -webkit-animation-delay: 1.6s;
-          animation-delay: 1.6s;
-}
-
-.loader__liste--element:nth-child(9) {
-  -webkit-animation-name: flash;
-          animation-name: flash;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
-  -webkit-animation-delay: 1.8s;
-          animation-delay: 1.8s;
-}
-
-.loader__liste--element:nth-child(10) {
-  -webkit-animation-name: flash;
-          animation-name: flash;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
 }
 
 .path__loader {
   stroke-dasharray: 440;
   stroke-dashoffset: 880;
   -webkit-animation-name: draw3;
-          animation-name: draw3;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-name: draw3;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
   -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
   -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
   -webkit-animation-direction: normal;
-          animation-direction: normal;
+  animation-direction: normal;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .circle__loader {
   stroke-dasharray: 700;
   stroke-dashoffset: 1400;
   -webkit-animation-name: draw3;
-          animation-name: draw3;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-name: draw3;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
   -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
   -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
   -webkit-animation-direction: normal;
-          animation-direction: normal;
+  animation-direction: normal;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
+  animation-fill-mode: forwards;
+  transform: rotate(270deg);
+  transform-origin: 50% 50%;
 }
 
 @-webkit-keyframes draw3 {
   99.99% {
     stroke-dashoffset: 0;
     opacity: 1;
+    z-index: 100;
   }
   100% {
     stroke-dashoffset: 0;
     opacity: 0;
+    z-index: -10;
   }
 }
 
@@ -337,33 +138,58 @@ a {
   99.99% {
     stroke-dashoffset: 0;
     opacity: 1;
+    z-index: 100;
   }
   100% {
     stroke-dashoffset: 0;
     opacity: 0;
+    z-index: -10;
   }
 }
 
-@-webkit-keyframes flash {
-  5% {
-    color: #99E2D0;
-  }
+/****************************************Section Localisation*********************************/
+.location {
+  width: 100%;
+  height: 5rem;
+  background-color: #eaeaea;
+  box-shadow: inset 0rem 0.5rem 0.7rem rgba(0, 0, 0, 0.2);
+  grid-area: location;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes flash {
-  5% {
-    color: #99E2D0;
-  }
+.location__town--lien {
+  font-size: 1.8rem;
+  color: #353535;
 }
 
+.location__town--saisie {
+  height: 2.5rem;
+  width: 14rem;
+  margin-left: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  border: none;
+  background-color: transparent;
+}
+
+/***************************************GRID Container***************************************/
 .container {
   width: 100%;
   height: 100vh;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 6.3rem;
-      grid-template-rows: 6.3rem;
-      grid-template-areas: "siteheader";
+  grid-template-columns: 1fr;
+  grid-template-rows: 6.3rem 5rem;
+  grid-template-areas: "siteheader" "location";
 }
+
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 6.3rem;
+    grid-template-areas: "siteheader location";
+  }
+}
+/*# sourceMappingURL=style.css.map */
