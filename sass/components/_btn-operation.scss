@@ -1,0 +1,40 @@
+/***************************************Btn operation************************************/
+
+.operation {
+  &__btn {
+    width: 32.5rem;
+    height: 7.5rem;
+    background-color: $colour-btn-operation;
+    border-radius: 2rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    @include flex-center;
+  }
+  &__number {
+    width: 2.2rem;
+    height: 2.2rem;
+    background-color: $colour-primary;
+    color: $colourbg-primary;
+    text-align: center;
+    border-radius: 2.2rem;
+    margin: 1rem;
+    font-size: 1.4rem;
+    padding-top: 0.3rem;
+    transform: translateX(-5.5rem);
+    &--3 {
+      transform: translateX(-5rem);
+    }
+  }
+  &__icon {
+    font-size: 1.8rem;
+    margin: 1rem;
+    color: $colour-icon-operation;
+    transform: translateX(-5rem);
+  }
+  &__parag {
+    font-size: 1.6rem;
+    color: #000;
+    margin: 1rem;
+    transform: translateX(-5rem);
+  }
+}

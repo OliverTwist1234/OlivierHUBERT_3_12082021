@@ -1,0 +1,15 @@
+/**********************************Btn Exploration*********************************/
+
+.exploration__btn {
+    width: 22rem;
+    height: 5rem;
+    background-image: $colour-btn-exploration;
+    border-radius: 5rem;
+    text-align: center;
+    box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    &--lien {
+      font-size: 1.6rem;
+      padding: 1.5rem;
+      color: #fff;
+    }
+  }
