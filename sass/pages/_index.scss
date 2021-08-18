@@ -1,4 +1,13 @@
-/***************************************GRID Container***************************************/
+/***************************************GRID Containers***************************************/
+
+.header-grid-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6.3rem 5rem;
+  grid-template-areas: "header" "location";
+}
+
+/**************************************Media queries version petit mobile********************/
 
 .operation {
   @include media-min(mobile-down) {
@@ -7,7 +16,7 @@
     }
 
     &__number {
-      transform: translateX(-2.5rem);
+      transform: translateX(-2.5rem); 
       &--3 {
         transform: translateX(-2rem);
       }
@@ -35,6 +44,23 @@
     }
     &__parag {
       transform: translateX(-5.5rem);
+    }
+  }
+}
+
+/***********************************Media queries version tablet*********************************/
+
+.header-grid-container{
+  @include media-min(tablet){
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 6.3rem;
+    grid-template-areas: "header location";
+    padding: 0 1rem;
+    justify-items: end;
+    .location{
+      max-width: 25rem;
+      margin: .6rem;
+      border-radius: 1rem;
     }
   }
 }

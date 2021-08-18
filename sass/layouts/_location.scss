@@ -1,6 +1,5 @@
-/****************************************Section Localisation*********************************/
-
 .location {
+  grid-area: location;
   width: 100%;
   height: 5rem;
   background-color: $colourbg-location;
@@ -24,3 +23,5 @@
     }
   }
 }
+
+
