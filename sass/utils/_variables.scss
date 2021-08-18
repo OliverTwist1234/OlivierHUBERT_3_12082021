@@ -42,3 +42,12 @@ $box-shadow-btn-survol: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
 $offset: 300;
 $dashArray: 440;
 $dashOffset: $dashArray * 2;
+
+//**********************Map Breakpoints****************************//
+
+$breakpoints: (
+  mobile: 500px,
+  tablet: 768px,
+  desktop: 1024px,
+  widescreen: 1440px,
+);
