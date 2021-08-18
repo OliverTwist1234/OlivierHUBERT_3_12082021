@@ -84,13 +84,13 @@ h2 {
   transition-delay: 0s;
 }
 .operation__btn:hover {
-  background-color: white;
+  background-color: rgba(246, 246, 246, 0);
   box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 .operation__number {
   width: 2.2rem;
   height: 2.2rem;
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: #fff;
   text-align: center;
   border-radius: 2.2rem;
@@ -164,7 +164,7 @@ h2 {
   left: 50%;
   transform: translate(-50%, 0);
   font-size: 3rem;
-  color: #99E2D0;
+  color: #99e2d0;
   display: flex;
 }
 
@@ -209,7 +209,7 @@ h2 {
 }
 
 @-webkit-keyframes draw3 {
-  99.99% {
+  80% {
     stroke-dashoffset: 0;
     opacity: 1;
     z-index: 100;
@@ -221,7 +221,7 @@ h2 {
   }
 }
 @keyframes draw3 {
-  99.99% {
+  80% {
     stroke-dashoffset: 0;
     opacity: 1;
     z-index: 100;

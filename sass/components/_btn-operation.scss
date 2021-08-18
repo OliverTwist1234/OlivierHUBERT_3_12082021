@@ -7,13 +7,13 @@
     background-color: $colour-btn-operation;
     border-radius: 2rem;
     margin-bottom: 2.5rem;
-    box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    box-shadow: $box-shadow-btn;
     @include flex-center;
     @include myTransition(background-color, 250ms, ease, 0s);
     @include myTransition(box-shadow, 250ms, ease, 0s);
     &:hover{
-        background-color: lighten($color: $colour-btn-operation, $amount: 10);
-        box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+        background-color: $colour-btn-operation-survol;
+        box-shadow: $box-shadow-btn-survol;
     }
   }
   &__number {

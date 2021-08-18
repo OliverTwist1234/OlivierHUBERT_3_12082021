@@ -1,8 +1,8 @@
 //***********************Couleurs principales***********************//
 
-$colour-primary: #9356DC;
-$colour-secondary: #FF79DA;
-$colour-tertiary: #99E2D0;
+$colour-primary: #9356dc;
+$colour-secondary: #ff79da;
+$colour-tertiary: #99e2d0;
 
 //**********************Couleurs backgrounds et texte*****************//
 
@@ -10,20 +10,35 @@ $colourbg-primary: #fff;
 $colourbg-location: #eaeaea;
 $colourtxt-location: #353535;
 $colourbg-secondary: #f6f6f6;
-$colourbg-footer:#353535; 
+$colourbg-footer: #353535;
 $colourbg-loader: rgba(255, 255, 255, 0.9);
 $colourtxt-new: #008766;
-
+$colourtxt: #000;
 
 //*********************Couleurs icones et boutons*******************//
 
 $colour-icon-operation: #7e7e7e;
-$colour-btn-exploration: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
-$colour-btn-operation: #f6f6f6;
+$colour-btn-exploration: linear-gradient(
+  0deg,
+  rgba(147, 86, 220, 1) 0%,
+  rgba(255, 121, 218, 1) 100%
+);
+$colour-btn-exploration-survol: linear-gradient(
+  0deg,
+  rgba(147, 86, 220, 1) 0%,
+  rgba(255, 121, 218, 0.5) 100%
+);
+$colour-btn-operation: rgba(246, 246, 246, 1);
+$colour-btn-operation-survol: rgba(246, 246, 246, 0);
+
+//**************************Variables Box-shadow********************//
+
+$box-shadow-location: inset 0rem 0.5rem 0.7rem rgba(0, 0, 0, 0.2);
+$box-shadow-btn: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+$box-shadow-btn-survol: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
 
 //*******************variables animation loader*********************//
 
 $offset: 300;
-$dashArray: 440; 
+$dashArray: 440;
 $dashOffset: $dashArray * 2;
-

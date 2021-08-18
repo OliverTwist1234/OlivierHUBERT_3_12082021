@@ -4,7 +4,7 @@
   width: 100%;
   height: 5rem;
   background-color: $colourbg-location;
-  box-shadow: inset 0rem 0.5rem 0.7rem rgba(0, 0, 0, 0.2);
+  box-shadow: $box-shadow-location;
   grid-area: location;
   @include flex-center;
   &__town {

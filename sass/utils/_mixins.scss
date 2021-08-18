@@ -1,8 +1,12 @@
+//*********************Mixin pour centrer un élément avec flexbox****************//
+
 @mixin flex-center {
   display: flex;
   align-items: center;
   justify-content: center; 
 }
+
+//*******************Mixin keyframes***********************************//
 
 @mixin keyframes($name) {
   @-webkit-keyframes #{$name} {
@@ -12,6 +16,8 @@
     @content;
   }
 }
+
+//***********************Mixin pour les animations*********************//
 
 @mixin animation(
   $animation,
@@ -37,6 +43,8 @@
   -webkit-animation-fill-mode: $fill-mode;
           animation-fill-mode: $fill-mode;
 }
+
+//****************************Mixin pour les transitions*************************//
 
 @mixin myTransition($property, $duration, $timing, $delay) {
   transition-property: $property;

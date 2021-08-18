@@ -39,7 +39,7 @@
 }
 
 @include keyframes(draw3) {
-  99.99% {
+  80% {
     stroke-dashoffset: 0;
     opacity: 1;
     z-index:100;
