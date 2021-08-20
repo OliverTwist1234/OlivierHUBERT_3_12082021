@@ -7,9 +7,15 @@
   &__titre {
     margin-bottom: 3rem;
   }
-  &__nav {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  &__lien{
+    &--1{
+      grid-area: operation1;
+    }
+    &--2{
+      grid-area: operation2;
+    }
+    &--3{
+      grid-area: operation3;
+    }
   }
 }

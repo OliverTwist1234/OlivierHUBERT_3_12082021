@@ -1,13 +1,53 @@
 /***************************************GRID Containers***************************************/
 
-.header-grid-container{
+.header-grid-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 6.3rem 5rem;
   grid-template-areas: "header" "location";
 }
 
-/**************************************Media queries version petit mobile********************/
+.operation__nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 9.5rem 9.5rem 9.5rem;
+  grid-template-areas: "operation1" "operation2" "operation3";
+  justify-items: center;
+}
+
+/**************************************Media queries Header*******************************/
+
+.header-grid-container {
+  @include media-min(tablet) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 6.3rem;
+    grid-template-areas: "header location";
+    padding: 0 1rem;
+    justify-items: end;
+    .siteheader__logo{
+      margin-top: 2rem;
+    }
+    .location {
+      max-width: 25rem;
+      margin: 1.5rem;
+      border-radius: 1rem;
+    }
+  }
+}
+
+/****************************Media queries Section exploration****************************/
+
+.exploration {
+  @include media-min(tablet) {
+    width: 97%;
+    margin: 3rem auto;
+    height: 23rem;
+    border-radius: 2rem;
+    box-shadow: $box-shadow-exploration;
+  }
+}
+
+/***************************Media queries Section operation*******************************/
 
 .operation {
   @include media-min(mobile-down) {
@@ -16,7 +56,7 @@
     }
 
     &__number {
-      transform: translateX(-2.5rem); 
+      transform: translateX(-2.5rem);
       &--3 {
         transform: translateX(-2rem);
       }
@@ -48,19 +88,71 @@
   }
 }
 
-/***********************************Media queries version tablet*********************************/
-
-.header-grid-container{
-  @include media-min(tablet){
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 6.3rem;
-    grid-template-areas: "header location";
-    padding: 0 1rem;
-    justify-items: end;
-    .location{
-      max-width: 25rem;
-      margin: .6rem;
-      border-radius: 1rem;
+.operation {
+  @include media-min(tablet) {
+    height: 30rem;
+    &__nav {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 9.5rem 9.5rem;
+      grid-template-areas:
+        "operation1 operation2"
+        "operation3 operation3";
+      justify-items: center;
     }
+  }
+  @include media-min(desktop-up){
+    height: 20rem;
+    &__nav{
+      display: flex;
+      justify-content: space-around;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 9.5rem;
+      grid-template-areas: "operation1 operation2 operation3";
+      justify-items: center;
+    }
+  }
+}
+
+/**********************************Media queries Section Restaurants**************************/
+
+.restaurant__card {
+  @include media-min(mobile-down) {
+    width: 27rem;
+    &--photo {
+      width: 27rem;
+    }
+  }
+  @include media-min(mobile) {
+    width: 32.5rem;
+    &--photo {
+      width: 32.5rem;
+    }
+  }
+  @include media-min(mobile-up) {
+    width: 45rem;
+    &--photo {
+      width: 45rem;
+    }
+  }
+}
+
+.restaurant__card {
+  @include media-min(mobile) {
+    transform: scale(1);
+    @include myTransition(transform, 0.3s, ease-in-out, 0s);
+    @include myTransition(box-shadow, 0.3s, ease-in-out, 0s);
+    &:hover {
+      box-shadow: $box-shadow-btn-survol;
+      transform: scale(1.05);
+    }
+  }
+}
+
+.restaurants {
+  @include media-min(tablet) {
+    width: 97%;
+    margin: 3rem auto;
+    border-radius: 2rem;
+    box-shadow: $box-shadow-exploration;
   }
 }
