@@ -1,0 +1,50 @@
+/*******************************Coeur "like" selectionnable*****************************/
+
+.heart {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-0.5rem, 0.5rem);
+    &__in {
+      visibility: hidden;
+    }
+    &__in[type="checkbox"]:checked + .heart__lbl .svg-1{
+      opacity: 0;
+    }
+    &__lbl {
+      display: block;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      .svg-1 {
+        height: 2rem;
+        width: 2rem;
+        position: aboslute;
+        fill: #fff;
+        stroke: #000;
+        z-index: 1;
+        stroke-width: 1rem;
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+        &:hover,
+        &:active {
+          cursor: pointer;
+          opacity: 0;
+        }
+      }
+      .svg-2 {
+        height: 2rem;
+        width: 2rem;
+        position: absolute;
+        fill: url(#Gradient-1);
+        stroke: url(#Gradient-1);
+        z-index: 0;
+        stroke-width: 1rem;
+      }
+    }
+  }
