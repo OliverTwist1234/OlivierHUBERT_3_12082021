@@ -15,4 +15,19 @@
   }
 }
 
-
+.restaurant{
+  &__card{
+    &--1{
+      grid-area: card1;
+    }
+    &--2{
+      grid-area: card2;
+    }
+    &--3{
+      grid-area: card3;
+    }
+    &--4{
+      grid-area: card4;
+    }
+  }
+}
