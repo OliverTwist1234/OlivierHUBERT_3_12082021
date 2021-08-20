@@ -191,3 +191,26 @@
     }
   }
 }
+
+/************************Media Queries Footer*****************************************/
+
+.sitefooter{
+  @include media-min(mobile){
+    align-items: center;
+    text-align: center;
+  }
+  @include media-min(desktop){
+    &__titre{
+      margin-bottom: 5rem;
+      font-size: 2.8rem;
+    }
+    &__liste{
+      width: 100%;
+      @include flex-center;
+      justify-content: space-around;
+      &--element{
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
