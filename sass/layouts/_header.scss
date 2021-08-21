@@ -6,6 +6,8 @@
     height: 6.3rem;
     @include flex-center;
     background-color: $colourbg-primary;
+    transform: translateX(-100%);
+    @include animation(slide-header, 1s, ease-in-out, 2.2s, 1, normal, forwards);
     &__image{
         height: 3rem;
     }

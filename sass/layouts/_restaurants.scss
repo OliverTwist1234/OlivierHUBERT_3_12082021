@@ -5,6 +5,8 @@
   height: 122.5rem;
   padding: 5rem 2rem;
   background-color: $colourbg-secondary;
+  transform: translateX(-100%);
+  @include animation(slide-header, 1s, ease-in-out, 2.2s, 1, normal, forwards);
   &__titre {
     margin-bottom: 2rem;
   }
@@ -15,18 +17,18 @@
   }
 }
 
-.restaurant{
-  &__card{
-    &--1{
+.restaurant {
+  &__card {
+    &--1 {
       grid-area: card1;
     }
-    &--2{
+    &--2 {
       grid-area: card2;
     }
-    &--3{
+    &--3 {
       grid-area: card3;
     }
-    &--4{
+    &--4 {
       grid-area: card4;
     }
   }

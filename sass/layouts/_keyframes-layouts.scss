@@ -1,0 +1,30 @@
+@include keyframes(draw3) {
+    80% {
+      stroke-dashoffset: 0;
+      opacity: 1;
+      z-index:100;
+    } 
+    100% {
+      stroke-dashoffset: 0;
+      opacity: 0;
+      z-index:-10; 
+    }
+  }
+
+  @include keyframes(slide-header){
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@include keyframes(slide-location){
+    0%{
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(0%);
+    }
+  }

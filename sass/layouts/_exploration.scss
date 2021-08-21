@@ -8,6 +8,8 @@
   flex-direction: column;
   align-items: center;
   background-color: $colourbg-secondary;
+  opacity: 0;
+  @include animation(apparition, 1s, ease-out, 2.2s, 1, normal, forwards);
   &__titre {
     text-align: center;
     margin: 1.5rem;
@@ -19,3 +21,6 @@
     margin-bottom: 2rem;
   }
 }
+
+
+

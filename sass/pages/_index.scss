@@ -144,17 +144,7 @@
   }
 }
 
-.restaurant__card {
-  @include media-min(mobile) {
-    transform: scale(1);
-    @include myTransition(transform, 0.3s, ease-in-out, 0s);
-    @include myTransition(box-shadow, 0.3s, ease-in-out, 0s);
-    &:hover {
-      box-shadow: $box-shadow-btn-survol;
-      transform: scale(1.05);
-    }
-  }
-}
+
 
 .restaurants {
   @include media-min(tablet) {
@@ -209,7 +199,7 @@
       @include flex-center;
       justify-content: space-around;
       &--element{
-        font-size: 1.8rem;
+        font-size: 1.6rem;
       }
     }
   }

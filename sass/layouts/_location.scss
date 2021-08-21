@@ -6,6 +6,8 @@
   box-shadow: $box-shadow-location;
   grid-area: location;
   @include flex-center;
+  transform: translateX(100%);
+    @include animation(slide-location, 1s, ease-in-out, 2.2s, 1, normal, forwards);
   &__town {
     &--lien {
       font-size: 1.8rem;
@@ -23,5 +25,4 @@
     }
   }
 }
-
 
