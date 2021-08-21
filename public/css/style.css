@@ -61,22 +61,6 @@ h3 {
     opacity: 1;
   }
 }
-@-webkit-keyframes anim-scale {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.05);
-  }
-}
-@keyframes anim-scale {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.05);
-  }
-}
 /**********************************Btn Exploration*********************************/
 .exploration__btn {
   width: 22rem;
@@ -318,7 +302,7 @@ h3 {
   transition-delay: 0s;
 }
 .restaurant__card--photo:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .restaurant__card--new {
   position: absolute;
