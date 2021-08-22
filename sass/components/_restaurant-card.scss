@@ -1,63 +1,66 @@
 /*************************************Cartes restaurants****************************/
 
-.restaurant__card {
-  height: 25rem;
-  width: 32.5rem;
-  border-radius: 2rem;
-  margin-bottom: 2rem;
-  background-color: $colourbg-primary;
-  box-shadow: $box-shadow-btn;
-  opacity: 0;
-  @for $i from 1 through 4 {
-    &--#{$i} {
-      @include animation(apparition, 0.4s, ease-out, 0s, 1, normal, forwards);
-      -webkit-animation-delay: (0.2s * $i) + 3.4s;
-      animation-delay: (0.2s * $i) + 3.4s;
+.restaurant {
+  &__card {
+    height: 25rem;
+    width: 32.5rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    background-color: $colourbg-primary;
+    box-shadow: $box-shadow-btn;
+    opacity: 0;
+    @for $i from 1 through 4 {
+      &--#{$i} {
+        @include animation(apparition, 0.4s, ease-out, 0s, 1, normal, forwards);
+        -webkit-animation-delay: (0.2s * $i) + 3.4s;
+        animation-delay: (0.2s * $i) + 3.4s;
+      }
+    }
+    @include myTransition(box-shadow, 0.3s, ease-in-out, 0s);
+    &:hover {
+      box-shadow: $box-shadow-btn-survol;
+    }
+    &--image {
+      position: relative;
+    }
+    &--photo {
+      width: 100%;
+      height: 17.5rem;
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+      -o-object-fit: cover;
+      object-fit: cover;
+      @include myTransition(opacity, 0.3s, ease-in-out, 0s);
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    &--new {
+      position: absolute;
+      width: 7rem;
+      height: 3rem;
+      background-color: $colour-tertiary;
+      text-align: center;
+      padding-top: 0.7rem;
+      border-radius: 0.3rem;
+      font-size: 1.3rem;
+      color: $colourtxt-new;
+      top: 1.2rem;
+      right: 1.2rem;
     }
   }
-  @include myTransition(box-shadow, 0.3s, ease-in-out, 0s);
-  &:hover {
-    box-shadow: $box-shadow-btn-survol;
-  }
-  &--image {
-    position: relative;
-  }
-  &--photo {
-    width: 100%;
-    height: 17.5rem;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-    -o-object-fit: cover;
-    object-fit: cover;
-    @include myTransition(opacity, 0.3s, ease-in-out, 0s);
-    &:hover{
-      opacity: 0.8;
+  &__infos {
+    padding: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    &--titre {
+      margin-bottom: 0.5rem;
     }
-  }
-  &--new {
-    position: absolute;
-    width: 7rem;
-    height: 3rem;
-    background-color: $colour-tertiary;
-    text-align: center;
-    padding-top: 0.7rem;
-    border-radius: 0.3rem;
-    font-size: 1.3rem;
-    color: $colourtxt-new;
-    top: 1.2rem;
-    right: 1.2rem;
+    &--parag {
+      font-size: 1.4rem;
+      font-weight: 200;
+    }
   }
 }
 
-.restaurant__infos {
-  padding: 1.3rem;
-  display: flex;
-  justify-content: space-between;
-  &--titre {
-    margin-bottom: 0.5rem;
-  }
-  &--parag {
-    font-size: 1.4rem;
-    font-weight: 200;
-  }
-}
+
