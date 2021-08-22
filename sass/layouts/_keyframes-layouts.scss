@@ -1,3 +1,5 @@
+/********************************Keyframes LOADER********************************/
+
 @include keyframes(draw3) {
     80% {
       stroke-dashoffset: 0;
@@ -11,7 +13,9 @@
     }
   }
 
-  @include keyframes(slide-header){
+/******************************Keyframes Slide*********************************/
+
+  @include keyframes(slide-left){
     0%{
         transform: translateX(-100%);
     }
@@ -20,7 +24,7 @@
     }
 }
 
-@include keyframes(slide-location){
+@include keyframes(slide-right){
     0%{
       transform: translateX(100%);
     }

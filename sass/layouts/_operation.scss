@@ -5,7 +5,7 @@
   height: 44rem;
   padding: 5rem 2rem;
   transform: translateX(100%);
-    @include animation(slide-location, 1s, ease-in-out, 2.2s, 1, normal, forwards);
+    @include animation(slide-right, 1s, ease-in-out, 2.2s, 1, normal, forwards);
   &__titre {
     margin-bottom: 3rem;
   } 

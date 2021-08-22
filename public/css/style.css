@@ -380,6 +380,7 @@ h3 {
   stroke-width: 1rem;
 }
 
+/********************************Keyframes LOADER********************************/
 @-webkit-keyframes draw3 {
   80% {
     stroke-dashoffset: 0;
@@ -404,7 +405,8 @@ h3 {
     z-index: -10;
   }
 }
-@-webkit-keyframes slide-header {
+/******************************Keyframes Slide*********************************/
+@-webkit-keyframes slide-left {
   0% {
     transform: translateX(-100%);
   }
@@ -412,7 +414,7 @@ h3 {
     transform: translateX(0%);
   }
 }
-@keyframes slide-header {
+@keyframes slide-left {
   0% {
     transform: translateX(-100%);
   }
@@ -420,7 +422,7 @@ h3 {
     transform: translateX(0%);
   }
 }
-@-webkit-keyframes slide-location {
+@-webkit-keyframes slide-right {
   0% {
     transform: translateX(100%);
   }
@@ -428,7 +430,7 @@ h3 {
     transform: translateX(0%);
   }
 }
-@keyframes slide-location {
+@keyframes slide-right {
   0% {
     transform: translateX(100%);
   }
@@ -446,8 +448,8 @@ h3 {
   justify-content: center;
   background-color: #fff;
   transform: translateX(-100%);
-  -webkit-animation-name: slide-header;
-  animation-name: slide-header;
+  -webkit-animation-name: slide-left;
+  animation-name: slide-left;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
@@ -579,8 +581,8 @@ h3 {
   align-items: center;
   justify-content: center;
   transform: translateX(100%);
-  -webkit-animation-name: slide-location;
-  animation-name: slide-location;
+  -webkit-animation-name: slide-right;
+  animation-name: slide-right;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
@@ -615,8 +617,8 @@ h3 {
   height: 44rem;
   padding: 5rem 2rem;
   transform: translateX(100%);
-  -webkit-animation-name: slide-location;
-  animation-name: slide-location;
+  -webkit-animation-name: slide-right;
+  animation-name: slide-right;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
@@ -686,8 +688,8 @@ h3 {
   padding: 5rem 2rem;
   background-color: #f6f6f6;
   transform: translateX(-100%);
-  -webkit-animation-name: slide-header;
-  animation-name: slide-header;
+  -webkit-animation-name: slide-left;
+  animation-name: slide-left;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
