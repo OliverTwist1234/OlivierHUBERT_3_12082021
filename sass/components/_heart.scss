@@ -3,9 +3,7 @@
 .heart {
     width: 2rem;
     height: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     transform: translate(-0.5rem, 0.5rem);
     &__in {
       visibility: hidden;
@@ -17,9 +15,7 @@
       display: block;
       width: 100%;
       height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flex-center;
       position: relative;
       .svg-1 {
         height: 2rem;

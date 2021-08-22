@@ -158,16 +158,19 @@ h3 {
   justify-content: center;
   transition-property: background-color;
   transition-duration: 250ms;
-  transition-timing-function: ease;
+  transition-timing-function: ease-in-out;
   transition-delay: 0s;
   transition-property: box-shadow;
   transition-duration: 250ms;
-  transition-timing-function: ease;
+  transition-timing-function: ease-in-out;
   transition-delay: 0s;
 }
 .operation__btn:hover {
   background-color: rgba(246, 246, 246, 0);
   box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.7);
+}
+.operation__btn--3 {
+  background-color: #f5edff;
 }
 .operation__number {
   width: 2.2rem;
@@ -189,6 +192,9 @@ h3 {
   margin: 1rem;
   color: #7e7e7e;
   transform: translateX(-5rem);
+}
+.operation__icon--3 {
+  color: #9356dc;
 }
 .operation__parag {
   font-size: 1.6rem;

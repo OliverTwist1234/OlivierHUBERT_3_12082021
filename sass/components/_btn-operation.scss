@@ -19,11 +19,14 @@
     margin-bottom: 2.5rem;
     box-shadow: $box-shadow-btn;
     @include flex-center;
-    @include myTransition(background-color, 250ms, ease, 0s);
-    @include myTransition(box-shadow, 250ms, ease, 0s);
+    @include myTransition(background-color, 250ms, ease-in-out, 0s);
+    @include myTransition(box-shadow, 250ms, ease-in-out, 0s);
     &:hover{
         background-color: $colour-btn-operation-survol;
         box-shadow: $box-shadow-btn-survol;
+    }
+    &--3{
+      background-color: $colour-btn-operation3;
     }
   }
   &__number {
@@ -46,6 +49,9 @@
     margin: 1rem;
     color: $colour-icon-operation;
     transform: translateX(-5rem);
+    &--3{
+      color: $colour-primary;
+    }
   }
   &__parag {
     font-size: 1.6rem;
