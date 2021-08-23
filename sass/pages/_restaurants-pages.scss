@@ -1,9 +1,72 @@
 /***********************************Grid containers Pages****************************************/
 
-.menu-cards-container{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 8.5rem 8.5rem 8.5rem;
-    grid-template-areas: "card1" "card2" "card3";
-    justify-items: center;
+.menu-cards-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 8.5rem 8.5rem 8.5rem;
+  grid-template-areas: "card1" "card2" "card3";
+  justify-items: center;
+}
+
+/*******************************Media queries Restos titre************************************************/
+
+.resto {
+  @include media-min(mobile-down) {
+    &__titre {
+      font-size: 2.5rem;
+    }
+  }
+  @include media-min(mobile) {
+    &__titre {
+      font-size: 3rem;
+    }
+  }
+}
+
+/*******************************Media queries Menu-cards******************************************/
+
+.menu-card {
+  @include media-min(mobile-down) {
+    width: 27rem;
+    &__titre {
+      font-size: 1.6rem;
+    }
+    &__comment {
+      font-size: 1.4rem;
+      &--parag {
+        max-width: 22rem;
+        font-size: 1.2rem;
+      }
+    }
+    &:active{
+      .menu-card{
+        &__comment{
+          &--parag{
+            max-width: 16rem;
+          }
+        }
+      }
+    }
+  }
+  @include media-min(mobile) {
+    width: 35rem;
+    &__titre {
+      font-size: 1.8rem;
+    }
+    &__comment {
+      &--parag {
+        max-width: 28rem;
+        font-size: 1.4rem;
+      }
+    }
+    &:active{
+      .menu-card{
+        &__comment{
+          &--parag{
+            max-width: 22rem;
+          }
+        }
+      }
+    }
+  }
 }

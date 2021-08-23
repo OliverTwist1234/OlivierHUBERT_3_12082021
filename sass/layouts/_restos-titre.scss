@@ -2,7 +2,7 @@
 
 .resto{
     position: absolute;
-    top: 40rem;
+    top: 41vh;
     width: 100%;
     height: 8.7rem;
     background-color: $colourbg-secondary;
@@ -12,6 +12,7 @@
     justify-content: space-between;
     border-top-left-radius: 4rem;
     border-top-right-radius: 4rem;
+    z-index: 1;
     opacity: 0;
     @include animation(apparition, 1s, ease-out, 2.2s, 1, normal, forwards);
     &__titre{
