@@ -1,0 +1,10 @@
+/*********************************************Section Command**********************************************/
+
+.command{
+    width: 100%;
+    height: 13.5rem;
+    background-color: $colourbg-secondary;
+    @include flex-center;
+    transform: translateX(100%);
+    @include animation(slide-right, 1s, ease-in-out, 2.2s, 1, normal, forwards);
+}

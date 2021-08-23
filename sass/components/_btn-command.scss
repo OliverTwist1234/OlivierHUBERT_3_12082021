@@ -1,0 +1,21 @@
+/****************************************************Btn Command*********************************************************/
+
+.command__btn {
+    width: 18.5rem;
+    height: 5rem;
+    background-image: $colour-btn-exploration;
+    border-radius: 5rem;
+    text-align: center;
+    box-shadow: $box-shadow-btn;
+    @include myTransition(background-image, 250ms, ease, 0s);
+    @include myTransition(box-shadow, 250ms, ease, 0s);
+    &:hover {
+      background-image: $colour-btn-exploration-survol;
+      box-shadow: $box-shadow-btn-survol;
+    }
+    &--lien {
+      font-size: 1.6rem;
+      padding: 1.5rem;
+      color: $colourbg-primary;
+    }
+  }
