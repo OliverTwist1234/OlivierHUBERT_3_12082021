@@ -6,10 +6,8 @@
     height: 30.5rem;
     padding: 1.5rem;
     background-color: $colourbg-secondary;
-    &--1{
-      grid-area: card1;
-    }
-    &--1, &--3 {
+    &--1 {
+      grid-area: menu1;
       transform: translateX(-100%);
       @include animation(
         slide-left,
@@ -21,8 +19,8 @@
         forwards
       );
     }
-    &--2{
-      grid-area: card2;
+    &--2 {
+      grid-area: menu2;
       transform: translateX(100%);
       @include animation(
         slide-right,
@@ -34,8 +32,18 @@
         forwards
       );
     }
-    &--3{
-      grid-area: card3;
+    &--3 {
+      grid-area: menu3;
+      transform: translateX(-100%);
+      @include animation(
+        slide-left,
+        1s,
+        ease-in-out,
+        2.2s,
+        1,
+        normal,
+        forwards
+      );
     }
     &--titre {
       font-size: 1.8rem;

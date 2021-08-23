@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 8.5rem 8.5rem 8.5rem;
-  grid-template-areas: "card1" "card2" "card3";
+  grid-template-areas: "menu1" "menu2" "menu3";
   justify-items: center;
 }
 
@@ -38,10 +38,10 @@
         font-size: 1.2rem;
       }
     }
-    &:active{
-      .menu-card{
-        &__comment{
-          &--parag{
+    &:active {
+      .menu-card {
+        &__comment {
+          &--parag {
             max-width: 16rem;
           }
         }
@@ -59,14 +59,77 @@
         font-size: 1.4rem;
       }
     }
-    &:active{
-      .menu-card{
-        &__comment{
-          &--parag{
+    &:active {
+      .menu-card {
+        &__comment {
+          &--parag {
             max-width: 22rem;
           }
         }
       }
     }
+  }
+  @include media-min(desktop) {
+    &:hover {
+      .menu-card {
+        &__apparat {
+          transform: translateX(0);
+          &--icon {
+            transform: rotate(-360deg);
+          }
+        }
+        &__comment {
+          &--price {
+            transform: translateX(-6rem);
+          }
+          &--parag {
+            max-width: 22rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/******************************Media queries Restos Titre****************************************/
+
+.resto {
+  @include media-min(desktop) {
+    width: 90%;
+    left: 5%;
+  }
+}
+
+/******************************Media queries Menu pages du site**********************************/
+
+.menu {
+  @include media-min(tablet) {
+    &__part {
+      height: 22rem;
+    }
+  }
+  @include media-min(desktop) {
+    width: 90%;
+    margin: auto;
+  }
+  @include media-min(desktop-up) {
+    &__part {
+      height: 13.5rem;
+    }
+  }
+}
+
+.menu-cards-container {
+  @include media-min(tablet) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 8.5rem 8.5rem;
+    grid-template-areas:
+      "menu1 menu2"
+      "menu3 menu3";
+  }
+  @include media-min(desktop-up) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 8.5rem;
+    grid-template-areas: "menu1" "menu2" "menu3";
   }
 }
