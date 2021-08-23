@@ -8,5 +8,6 @@
     object-fit: cover;
     transform: translateX(100%);
     @include animation(slide-right, 1s, ease-in-out, 2.2s, 1, normal, forwards);
+    margin-bottom: 2.5rem;
   }
 }

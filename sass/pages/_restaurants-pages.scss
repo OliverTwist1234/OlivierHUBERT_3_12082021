@@ -1,0 +1,9 @@
+/***********************************Grid containers Pages****************************************/
+
+.menu-cards-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8.5rem 8.5rem 8.5rem;
+    grid-template-areas: "card1" "card2" "card3";
+    justify-items: center;
+}

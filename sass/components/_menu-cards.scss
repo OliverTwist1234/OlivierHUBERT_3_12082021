@@ -1,0 +1,100 @@
+/************************************Cartes du menu des pages du site*********************************/
+
+.menu-card {
+  width: 35rem;
+  height: 7rem;
+  background-color: $colourbg-primary;
+  margin-bottom: 1.5rem;
+  position: relative;
+  border-radius: 1.5rem;
+  box-shadow: $box-shadow-btn;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  overflow: hidden;
+  transform: translateY(30%);
+  opacity: 0;
+  @for $i from 1 through 9 {
+    &--#{$i} {
+      @include animation(apparition, 0.4s, ease-out, 0s, 1, normal, forwards);
+      -webkit-animation-delay: (0.2s * $i) + 3s;
+      animation-delay: (0.2s * $i) + 3s;
+    }
+  }
+  @include myTransition(box-shadow, 0.3s, ease-in-out, 0s);
+  &:hover {
+    box-shadow: $box-shadow-btn-survol;
+  }
+  &__comment {
+    display: flex;
+    justify-content: space-between;
+    &--parag {
+      max-width: 28rem;
+      font-size: 1.4rem;
+      font-weight: 300;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transition: max-width 300ms linear;
+      margin-top: 0.5rem;
+    }
+    &--price {
+      margin-top: 0.5rem;
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-left: 1rem;
+      transform: translateX(0);
+      transition: transform 300ms linear;
+    }
+  }
+  &__apparat {
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    right: 0;
+    bottom: 0rem;
+    display: flex;
+    background-color: $colour-tertiary;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    transform-origin: right;
+    transform: translateX(100%);
+    transition: transform 300ms linear;
+    &--icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 2rem;
+      color: #fff;
+      transform: rotate(0);
+      transition: transform 300ms linear;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    .menu-card {
+      &__apparat {
+        transform: translateX(0);
+        &--icon {
+          transform: rotate(-360deg);
+        }
+      }
+      &__comment {
+        &--price {
+          transform: translateX(-7rem);
+        }
+        &--parag {
+          max-width: 22rem;
+        }
+      }
+    }
+  }
+}
+
