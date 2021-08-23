@@ -6,10 +6,22 @@
     height: 30.5rem;
     padding: 1.5rem;
     background-color: $colourbg-secondary;
-    &--1 {
+    &--1, &--3 {
       transform: translateX(-100%);
       @include animation(
         slide-left,
+        1s,
+        ease-in-out,
+        2.2s,
+        1,
+        normal,
+        forwards
+      );
+    }
+    &--2{
+      transform: translateX(100%);
+      @include animation(
+        slide-right,
         1s,
         ease-in-out,
         2.2s,
