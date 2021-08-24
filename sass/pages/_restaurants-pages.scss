@@ -3,8 +3,8 @@
 .menu-cards-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 8.5rem 8.5rem 8.5rem;
-  grid-template-areas: "menu1" "menu2" "menu3";
+  grid-template-rows: 8.5rem 8.5rem 8.5rem 1fr;
+  grid-template-areas: "menu1" "menu2" "menu3" "menu4";
   justify-items: center;
 }
 
@@ -103,19 +103,9 @@
 /******************************Media queries Menu pages du site**********************************/
 
 .menu {
-  @include media-min(tablet) {
-    &__part {
-      height: 22rem;
-    }
-  }
   @include media-min(desktop) {
     width: 90%;
     margin: auto;
-  }
-  @include media-min(desktop-up) {
-    &__part {
-      height: 13.5rem;
-    }
   }
 }
 
@@ -125,11 +115,12 @@
     grid-template-rows: 8.5rem 8.5rem;
     grid-template-areas:
       "menu1 menu2"
-      "menu3 menu3";
+      "menu3 menu4";
   }
   @include media-min(desktop-up) {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 8.5rem;
-    grid-template-areas: "menu1" "menu2" "menu3";
+    grid-template-rows: 8.5rem 8.5rem;
+    grid-template-areas: "menu1 menu2 menu3"
+                         "menu4 menu5 menu5";
   }
 }
