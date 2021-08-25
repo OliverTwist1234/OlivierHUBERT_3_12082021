@@ -29,6 +29,15 @@
   &:hover {
     box-shadow: $box-shadow-btn-survol;
   }
+  &__in{
+    visibility: hidden;
+  }
+  &__titre{
+    font-weight: 600;
+    &:hover{
+      cursor: pointer;
+    }
+  }
   &__comment {
     display: flex;
     justify-content: space-between;
@@ -73,9 +82,7 @@
       transition: transform 300ms linear;
     }
   }
-  &:hover {
-    cursor: pointer;
-  }
+  
   &:active {
     .menu-card {
       &__apparat {
@@ -96,3 +103,21 @@
   }
 }
 
+.menu-card__in[type="checkbox"]:checked
+  ~ .menu-card__comment
+  > .menu-card__comment--price {
+  transform: translateX(-6rem);
+}
+.menu-card__in[type="checkbox"]:checked
+  ~ .menu-card__comment
+  > .menu-card__comment--parag {
+  max-width: 22rem;
+}
+.menu-card__in[type="checkbox"]:checked ~ .menu-card__apparat {
+  transform: translateX(0);
+} 
+.menu-card__in[type="checkbox"]:checked
+  ~ .menu-card__apparat
+  > .menu-card__apparat--icon {
+  transform: rotate(-360deg);
+}
