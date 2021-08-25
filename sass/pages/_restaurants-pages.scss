@@ -38,6 +38,7 @@
         font-size: 1.2rem;
       }
     }
+    &:hover,
     &:active {
       .menu-card {
         &__comment {
@@ -92,6 +93,14 @@
         }
       }
     }
+  }
+}
+
+.menu-card__in[type="checkbox"]:checked
+  ~ .menu-card__comment
+  > .menu-card__comment--parag {
+  @include media-min(mobile-down) {
+    max-width: 15rem;
   }
 }
 
