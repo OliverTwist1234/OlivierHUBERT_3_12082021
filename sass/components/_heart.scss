@@ -3,7 +3,6 @@
 .heart {
     width: 2rem;
     height: 2rem;
-    cursor: pointer;
     @include flex-center;
     transform: translate(-0.5rem, 0.5rem);
     &__in {
@@ -18,6 +17,9 @@
       height: 100%;
       @include flex-center;
       position: relative;
+      &:hover{
+        cursor: pointer;
+      }
       .svg-1 {
         height: 2rem;
         width: 2rem;
