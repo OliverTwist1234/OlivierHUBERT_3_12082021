@@ -25,11 +25,9 @@
       animation-delay: (0.2s * $i) + 3s;
     }
   }
-  @include myTransition(box-shadow, 0.3s, ease-in-out, 0s);
-  &:hover {
-    box-shadow: $box-shadow-btn-survol;
-  }
   &__in{
+    position: absolute;
+    
     visibility: hidden;
   }
   &__titre{

@@ -70,6 +70,10 @@
     }
   }
   @include media-min(desktop) {
+    @include myTransition(box-shadow, 0.3s, ease-in-out, 0s);
+    &:hover {
+      box-shadow: $box-shadow-btn-survol;
+    }
     &:hover {
       .menu-card {
         &__apparat {
@@ -120,7 +124,8 @@
   @include media-min(desktop-up) {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 8.5rem 8.5rem;
-    grid-template-areas: "menu1 menu2 menu3"
-                         "menu4 menu5 menu5";
+    grid-template-areas:
+      "menu1 menu2 menu3"
+      "menu4 menu5 menu5";
   }
 }

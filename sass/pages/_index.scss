@@ -120,6 +120,21 @@
     }
   }
 }
+/**********************************Media queries heart****************************************/
+
+.heart{
+  @include media-min(desktop){
+    &__lbl{
+      .svg-1{
+        &:hover {
+          cursor: pointer;
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
 
 /**********************************Media queries Section Restaurants**************************/
 
@@ -142,6 +157,18 @@
       width: 45rem;
     }
   }
+  @include media-min(desktop){
+    @include myTransition(box-shadow, 0.3s, ease-in-out, 0s);
+    &:hover {
+      box-shadow: $box-shadow-btn-survol;
+    }
+    &--photo{
+      @include myTransition(opacity, 0.3s, ease-in-out, 0s);
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
 }
 
 
@@ -162,6 +189,7 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 27rem 27rem;
       grid-template-areas: "card1  card2" "card3 card4";
+
     }
   }
   @include media-min(widescreen) {
@@ -181,6 +209,7 @@
     }
   }
 }
+
 
 /************************Media Queries Footer*****************************************/
 
