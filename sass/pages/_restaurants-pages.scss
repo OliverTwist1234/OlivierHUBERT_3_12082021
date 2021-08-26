@@ -38,7 +38,7 @@
         font-size: 1.2rem;
       }
     }
-    &:hover,
+
     &:active {
       .menu-card {
         &__comment {
@@ -101,6 +101,18 @@
   > .menu-card__comment--parag {
   @include media-min(mobile-down) {
     max-width: 15rem;
+  }
+  @include media-min(mobile) {
+    max-width: 22rem;
+  }
+}
+
+.menu-card__in[type="checkbox"]:checked + .menu-card__titre {
+  @include media-min(mobile-down) {
+    max-width: 18.5rem;
+  }
+  @include media-min(mobile) {
+    max-width: 27rem;
   }
 }
 

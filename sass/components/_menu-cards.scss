@@ -9,9 +9,9 @@
   border-radius: 1.5rem;
   box-shadow: $box-shadow-btn;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
@@ -25,14 +25,19 @@
       animation-delay: (0.2s * $i) + 3s;
     }
   }
-  &__in{
+  &__in {
     position: absolute;
-    
+
     visibility: hidden;
   }
-  &__titre{
+  &__titre {
+    max-width: 29rem;
     font-weight: 600;
-    &:hover{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: max-width 300ms linear;
+    &:hover {
       cursor: pointer;
     }
   }
@@ -80,9 +85,12 @@
       transition: transform 300ms linear;
     }
   }
-  
+
   &:active {
     .menu-card {
+      &__titre{
+        max-width: 26rem;
+      }
       &__apparat {
         transform: translateX(0);
         &--icon {
@@ -101,6 +109,9 @@
   }
 }
 
+.menu-card__in[type="checkbox"]:checked + .menu-card__titre{
+  max-width: 27rem;
+}
 .menu-card__in[type="checkbox"]:checked
   ~ .menu-card__comment
   > .menu-card__comment--price {
@@ -113,7 +124,7 @@
 }
 .menu-card__in[type="checkbox"]:checked ~ .menu-card__apparat {
   transform: translateX(0);
-} 
+}
 .menu-card__in[type="checkbox"]:checked
   ~ .menu-card__apparat
   > .menu-card__apparat--icon {
