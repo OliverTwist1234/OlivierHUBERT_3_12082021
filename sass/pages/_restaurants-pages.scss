@@ -77,6 +77,9 @@
     }
     &:hover {
       .menu-card {
+        &__titre{
+          max-width: 27rem;
+        }
         &__apparat {
           transform: translateX(0);
           &--icon {
