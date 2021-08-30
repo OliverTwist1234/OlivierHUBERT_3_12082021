@@ -8,6 +8,14 @@
     box-sizing: border-box;
 }
 
+body{
+    width: 100%;
+    max-width: 192rem;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+}
+
 li{
     list-style: none;
 }
