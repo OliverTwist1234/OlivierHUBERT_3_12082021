@@ -160,6 +160,7 @@
   @include media-min(desktop){
     @include myTransition(box-shadow, 0.3s, ease-in-out, 0s);
     &:hover {
+      cursor: pointer;
       box-shadow: $box-shadow-btn-survol;
     }
     &--photo{
